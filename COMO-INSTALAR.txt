@@ -1,0 +1,70 @@
+﻿# Look Outside — Tradução PT-BR
+
+Tradução não oficial para português do Brasil de **Look Outside** (versão Steam). Versão v0.1.0 (beta).
+
+- Traduz diálogos, menus, itens, habilidades, inimigos e descrições.
+- Não substitui nenhum arquivo do jogo: só acrescenta dois plugins e os registra na lista de plugins.
+- Saves, dados, imagens e sons originais não são alterados. Textos desenhados nas imagens continuam em inglês.
+- Funciona offline e pode ser removida a qualquer momento.
+
+> **Versão beta.** Se encontrar um erro, tire um print da tela, escreva onde ele aparece no jogo e o que está errado, e envie para **ewertoncbranco@gmail.com** ou abra uma *issue* neste repositório.
+
+## Download
+
+Escolha uma opção:
+
+- Baixe só o instalador: clique em `Instalador-LookOutside-PTBR.exe` na lista de arquivos acima e depois no botão de download (**Download raw file**).
+- Ou baixe tudo: botão verde **Code > Download ZIP** nesta página, ou o arquivo `LookOutside-PTBR-v0.1.0.zip` na página **Releases**, quando disponível. **Extraia** o ZIP (botão direito > *Extrair tudo...*) antes de usar.
+
+Arquivos para instalar:
+
+| Arquivo | Para que serve |
+|---|---|
+| `Instalador-LookOutside-PTBR.exe` | Instalação automática (recomendada) |
+| `js\plugins\LookOutside_PTBR.js` | Plugin da tradução (instalação manual) |
+| `js\plugins\LookOutside_PTBR_catalog.js` | Textos traduzidos (instalação manual) |
+| `COMO-INSTALAR.txt` | Este tutorial |
+| `INSTALACAO-MANUAL.txt` | Passo a passo da instalação manual |
+
+## Instalação automática (recomendada)
+
+1. Feche o Look Outside.
+2. Execute `Instalador-LookOutside-PTBR.exe`.
+3. O programa procura o jogo na Steam sozinho. Se não encontrar, clique em **Procurar...** e escolha a pasta do jogo (na Steam: botão direito em **Look Outside > Gerenciar > Ver arquivos locais**).
+4. Clique em **Instalar tradução**.
+5. Abra o jogo pela Steam normalmente.
+
+Para desinstalar, abra o mesmo programa e clique em **Remover tradução**.
+
+Observações:
+- Se o Windows mostrar *"O Windows protegeu o computador"*, clique em **Mais informações > Executar assim mesmo**. O aviso aparece porque o programa não tem assinatura digital paga; o código-fonte está na pasta `instalador` deste repositório.
+- Se a pasta do jogo exigir permissão, o próprio programa pede para reabrir como administrador.
+- O instalador não precisa de internet nem instala nada além da tradução.
+
+## Instalação manual
+
+Prefere não executar o instalador? Siga o passo a passo em [INSTALACAO-MANUAL.md](INSTALACAO-MANUAL.md) (também incluído no ZIP como `INSTALACAO-MANUAL.txt`). Você vai copiar os dois arquivos de `js\plugins` para a pasta do jogo e registrá-los em `js\plugins.js`.
+
+## Depois de uma atualização do jogo
+
+Uma atualização da Steam pode restaurar o `js\plugins.js` original, e o jogo volta ao inglês. Abra o instalador e clique em **Reparar tradução** (ou repita o passo 3 de [INSTALACAO-MANUAL.md](INSTALACAO-MANUAL.md)). Saves não são afetados.
+
+## Problemas comuns
+
+| Sintoma | Solução |
+|---|---|
+| Jogo continua em inglês | Confira se os dois arquivos estão em `js\plugins` e se as linhas estão em `plugins.js` (veja [INSTALACAO-MANUAL.md](INSTALACAO-MANUAL.md)). Abra o instalador para ver o estado. |
+| Erro ao abrir o jogo depois da instalação manual | Quase sempre é a vírgula do passo 3. Restaure a cópia de `plugins.js` e refaça. |
+| Instalador diz que o jogo está aberto | Feche o jogo completamente (inclusive pela bandeja/Gerenciador de Tarefas). |
+| Texto em imagens está em inglês | Esperado: a arte original não foi modificada. |
+
+## Créditos
+
+- Base de tradução automática: **Hitalo S. Pereira / HitaloSP** — [projeto](https://github.com/Hitalo0Silva/tradutor-look-outside-multlanguage) · [Nexus Mods](https://www.nexusmods.com/lookoutside/mods/65?tab=description).
+- Revisão contextual, plugin de exibição e instalador: projeto Look Outside PT-BR.
+
+## Licença
+
+O trabalho deste projeto (tradução, plugins e instalador) é distribuído sob a licença [Creative Commons Atribuição-NãoComercial-CompartilhaIgual 4.0 Internacional (CC BY-NC-SA 4.0)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.pt-br); veja [LICENSE](LICENSE). Você pode compartilhar e adaptar dando crédito a este projeto e à base de HitaloSP, sem uso comercial e mantendo a mesma licença.
+
+A base comunitária permite adaptações com crédito e **proíbe uso comercial**; o mesmo vale para esta tradução. A licença não cobre o jogo: Look Outside, seus textos originais e seus arquivos pertencem aos seus respectivos titulares. Esta não é uma tradução oficial e não contém arquivos do jogo.

@@ -11,9 +11,12 @@ Tradução não oficial para português do Brasil de **Look Outside** (versão S
 
 ## Download
 
-Baixe o arquivo `LookOutside-PTBR-v0.1.0.zip` na página **Releases** deste repositório e **extraia** o ZIP (botão direito > *Extrair tudo...*).
+Escolha uma opção:
 
-O ZIP contém:
+- Baixe só o instalador: clique em `Instalador-LookOutside-PTBR.exe` na lista de arquivos acima e depois no botão de download (**Download raw file**).
+- Ou baixe tudo: botão verde **Code > Download ZIP** nesta página, ou o arquivo `LookOutside-PTBR-v0.1.0.zip` na página **Releases**, quando disponível. **Extraia** o ZIP (botão direito > *Extrair tudo...*) antes de usar.
+
+Arquivos para instalar:
 
 | Arquivo | Para que serve |
 |---|---|
@@ -60,4 +63,8 @@ Uma atualização da Steam pode restaurar o `js\plugins.js` original, e o jogo v
 - Base de tradução automática: **Hitalo S. Pereira / HitaloSP** — [projeto](https://github.com/Hitalo0Silva/tradutor-look-outside-multlanguage) · [Nexus Mods](https://www.nexusmods.com/lookoutside/mods/65?tab=description).
 - Revisão contextual, plugin de exibição e instalador: projeto Look Outside PT-BR.
 
-A base comunitária permite adaptações com crédito e **proíbe uso comercial**; o mesmo vale para esta tradução. Look Outside e seus arquivos pertencem aos seus respectivos titulares. Esta não é uma tradução oficial e não contém arquivos do jogo.
+## Licença
+
+O trabalho deste projeto (tradução, plugins e instalador) é distribuído sob a licença [Creative Commons Atribuição-NãoComercial-CompartilhaIgual 4.0 Internacional (CC BY-NC-SA 4.0)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.pt-br); veja [LICENSE](LICENSE). Você pode compartilhar e adaptar dando crédito a este projeto e à base de HitaloSP, sem uso comercial e mantendo a mesma licença.
+
+A base comunitária permite adaptações com crédito e **proíbe uso comercial**; o mesmo vale para esta tradução. A licença não cobre o jogo: Look Outside, seus textos originais e seus arquivos pertencem aos seus respectivos titulares. Esta não é uma tradução oficial e não contém arquivos do jogo.
