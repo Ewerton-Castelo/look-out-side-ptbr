@@ -1,0 +1,72 @@
+# Look Outside — Tradução PT-BR: instalação manual
+
+Versão v0.1.0 (beta). Use este caminho se preferir não executar o instalador. Os arquivos necessários estão na pasta `js` deste repositório e no ZIP da página **Releases**.
+
+Feche o jogo antes de começar.
+
+## 1. Encontre a pasta do jogo
+
+Na Steam: botão direito em **Look Outside > Gerenciar > Ver arquivos locais**. Abre a pasta que contém o `Game.exe`. Normalmente é:
+
+```
+C:\Program Files (x86)\Steam\steamapps\common\Look Outside
+```
+
+## 2. Copie os plugins
+
+Copie a pasta `js` do ZIP para dentro da pasta do jogo e aceite mesclar as pastas. Nenhum arquivo do jogo será substituído; no fim devem existir:
+
+```
+Look Outside\js\plugins\LookOutside_PTBR.js
+Look Outside\js\plugins\LookOutside_PTBR_catalog.js
+```
+
+## 3. Registre os plugins
+
+1. Na pasta do jogo, faça uma cópia de segurança de `js\plugins.js` (por exemplo, `plugins.js.backup`).
+2. Abra `js\plugins.js` com o **Bloco de Notas** (botão direito > *Abrir com* > *Bloco de Notas*).
+3. Vá até o fim do arquivo. Ele termina assim (o conteúdo acima varia):
+
+   ```
+           }
+       }
+   ];
+   ```
+
+4. Logo **antes** de `];`, depois do último `}`, cole o texto abaixo. A vírgula no começo é obrigatória:
+
+   ```
+   ,
+   {"name":"LookOutside_PTBR_catalog","status":true,"description":"PT-BR text catalog","parameters":{}},
+   {"name":"LookOutside_PTBR","status":true,"description":"PT-BR translation overlay","parameters":{}}
+   ```
+
+   O final do arquivo deve ficar assim:
+
+   ```
+           }
+       }
+   ,
+   {"name":"LookOutside_PTBR_catalog","status":true,"description":"PT-BR text catalog","parameters":{}},
+   {"name":"LookOutside_PTBR","status":true,"description":"PT-BR translation overlay","parameters":{}}
+   ];
+   ```
+
+5. Salve (Ctrl+S) e abra o jogo pela Steam.
+
+Se o jogo não abrir ou mostrar erro, restaure a cópia de `plugins.js` e repita o passo com atenção à vírgula. A ordem importa: o `_catalog` vem primeiro.
+
+## Remoção manual
+
+1. Apague as três linhas que você colou em `js\plugins.js` (a vírgula e as duas linhas `LookOutside_PTBR`), ou restaure a cópia de segurança.
+2. Apague `js\plugins\LookOutside_PTBR.js` e `js\plugins\LookOutside_PTBR_catalog.js`.
+
+Outra opção: na Steam, **Propriedades > Arquivos instalados > Verificar integridade dos arquivos** restaura o `plugins.js` original e desativa a tradução. Depois disso os dois plugins ficam na pasta, mas não são carregados.
+
+## Depois de uma atualização do jogo
+
+Uma atualização da Steam pode restaurar o `js\plugins.js` original, e o jogo volta ao inglês. Repita o passo 3. Saves não são afetados.
+
+## Encontrou um erro?
+
+A tradução está em beta. Tire um print da tela, escreva onde o erro aparece no jogo e o que está errado, e envie para **ewertoncbranco@gmail.com** ou abra uma *issue* neste repositório.
