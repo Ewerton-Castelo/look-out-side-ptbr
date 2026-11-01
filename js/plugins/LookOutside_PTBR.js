@@ -313,6 +313,26 @@
         }
     }
 
+    // Weapon names that share English text with another term (the weapon
+    // "Rake" versus the skill "Rake"). Only weapon records drawn through
+    // drawItemName use this scope; data and saves keep the original name.
+    if (typeof Window_Base !== "undefined" &&
+        typeof Window_Base.prototype.drawItemName === "function") {
+        const drawItemName = Window_Base.prototype.drawItemName;
+        Window_Base.prototype.drawItemName = function (item) {
+            const isWeapon = enabled && item && typeof item.wtypeId === "number" && typeof item.name === "string";
+            const local = isWeapon ? scoped("weaponName", item.name) : undefined;
+            if (local === undefined) return drawItemName.apply(this, arguments);
+            const previous = pendingScopedDisplay;
+            pendingScopedDisplay = { source: item.name, target: local };
+            try {
+                return drawItemName.apply(this, arguments);
+            } finally {
+                pendingScopedDisplay = previous;
+            }
+        };
+    }
+
     if (typeof Window_StatusBase !== "undefined" &&
         typeof Window_StatusBase.prototype.drawActorName === "function") {
         const drawActorName = Window_StatusBase.prototype.drawActorName;
