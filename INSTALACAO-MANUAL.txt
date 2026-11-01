@@ -1,6 +1,6 @@
 ﻿# Look Outside — Tradução PT-BR: instalação manual
 
-Versão v0.1.0 (beta). Use este caminho se preferir não executar o instalador. Os arquivos necessários estão na pasta `js` deste repositório e no ZIP da página **Releases**.
+Versão v0.1.1 (beta). Use este caminho se preferir não executar o instalador. Os arquivos necessários estão na pasta `js` deste repositório e no ZIP da página **Releases**.
 
 Feche o jogo antes de começar.
 

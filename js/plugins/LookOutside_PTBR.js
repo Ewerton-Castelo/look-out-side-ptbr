@@ -1,6 +1,6 @@
 /*:
  * @target MZ
- * @plugindesc Tradução PT-BR por sobreposição de texto exibido (v0.1.0).
+ * @plugindesc Tradução PT-BR por sobreposição de texto exibido (v0.1.1).
  * @author Projeto de tradução PT-BR
  * @help
  * Carregue LookOutside_PTBR_catalog antes deste plugin e este plugin por último.
@@ -14,7 +14,7 @@
     "use strict";
 
     const root = globalThis;
-    if (root.LookOutsidePTBR && root.LookOutsidePTBR.version === "0.1.0") return;
+    if (root.LookOutsidePTBR && root.LookOutsidePTBR.version === "0.1.1") return;
 
     const data = root.LookOutsidePTBRData || {};
     const supplied = data.translations || {};
@@ -698,7 +698,7 @@
     }
 
     root.LookOutsidePTBR = Object.freeze({
-        version: "0.1.0",
+        version: "0.1.1",
         translate: translate,
         translateChoices: translateChoices,
         setEnabled: function (value) {

@@ -1,6 +1,6 @@
 ﻿# Look Outside — Tradução PT-BR
 
-Tradução não oficial para português do Brasil de **Look Outside** (versão Steam). Versão v0.1.0 (beta).
+Tradução não oficial para português do Brasil de **Look Outside** (versão Steam). Versão v0.1.1 (beta).
 
 - Traduz diálogos, menus, itens, habilidades, inimigos e descrições.
 - Não substitui nenhum arquivo do jogo: só acrescenta dois plugins e os registra na lista de plugins.
@@ -14,7 +14,7 @@ Tradução não oficial para português do Brasil de **Look Outside** (versão S
 Escolha uma opção:
 
 - Baixe só o instalador: clique em `Instalador-LookOutside-PTBR.exe` na lista de arquivos acima e depois no botão de download (**Download raw file**).
-- Ou baixe tudo: botão verde **Code > Download ZIP** nesta página, ou o arquivo `LookOutside-PTBR-v0.1.0.zip` na página **Releases**, quando disponível. **Extraia** o ZIP (botão direito > *Extrair tudo...*) antes de usar.
+- Ou baixe tudo: botão verde **Code > Download ZIP** nesta página, ou o arquivo `LookOutside-PTBR-v0.1.1.zip` na página **Releases**, quando disponível. **Extraia** o ZIP (botão direito > *Extrair tudo...*) antes de usar.
 
 Arquivos para instalar:
 
